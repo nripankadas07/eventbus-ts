@@ -1,9 +1,5 @@
 # eventbus-ts
 
-[![Tests](https://img.shields.io/badge/tests-78%20passing-brightgreen)](#running-tests)
-[![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](#running-tests)
-[![Type](https://img.shields.io/badge/typed-strict-blue)](#running-tests)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Type-safe pub-sub bus with dotted topics and `*`, `**`, `?` glob
 subscriptions. Zero runtime dependencies.
@@ -42,11 +38,11 @@ without per-event boilerplate.
 ## Install
 
 ```bash
-npm install eventbus-ts
+npm install && npm run build
 # or
-yarn add eventbus-ts
+yarn install && yarn build
 # or
-pnpm add eventbus-ts
+pnpm install && pnpm build
 ```
 
 Requires Node 18+.
