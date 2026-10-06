@@ -13,7 +13,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "pretest": "node --test dependency-audit.test.cjs"
   },
   "keywords": [
     "event",
@@ -40,5 +41,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/nripankadas07/eventbus-ts"
+  },
+  "overrides": {
+    "js-yaml": {
+      "argparse": "2.0.1"
+    }
   }
 }
